@@ -692,9 +692,9 @@ class QuickFixRegistrar : QuickFixContributor {
 
         CONSTRUCTOR_IN_OBJECT.registerFactory(ChangeObjectToClassFix)
 
-        REDUNDANT_LABEL_WARNING.registerFactory(RemoveRedundantLabelFix)
-        NOT_A_FUNCTION_LABEL.registerFactory(RemoveReturnLabelFix)
-        NOT_A_FUNCTION_LABEL_WARNING.registerFactory(RemoveReturnLabelFix)
+        REDUNDANT_LABEL_WARNING.registerFactory(RemoveReturnLabelFixFactory)
+        NOT_A_FUNCTION_LABEL.registerFactory(RemoveReturnLabelFixFactory)
+        NOT_A_FUNCTION_LABEL_WARNING.registerFactory(RemoveReturnLabelFixFactory)
 
         ANNOTATION_ON_SUPERCLASS.registerFactory(RemoveAnnotationFix)
 
